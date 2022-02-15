@@ -1,7 +1,7 @@
 import tkinter as tk
 
-WIDTH = 10
-HEIGHT = 10
+WIDTH = 5
+HEIGHT = 5
 
 # init matrix WIDTH x HEIGTH of all false
 patternMatrix = [[False for x in range(WIDTH)] for y in range(HEIGHT)]
