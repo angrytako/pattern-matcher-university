@@ -4,6 +4,8 @@ from PIL import ImageTk
 
 from ShowRandPattern import *
 from SetPattern import *
+from Algoritmo import *
+
 countPatternFounded = 1
 totPatternFounded = 5      # es. 5 --> da mettere il num totali trovato
 
@@ -20,7 +22,8 @@ def add_pattern_match_callback(numPatternLb, control, risLb, patternMatr, mainMa
 
 # still has to be implemented
 def pattern_match(label, patternMatr, mainMatr):
-    print(patternMatr)
+    matchList = algoritmo(label, patternMatr, mainMatr)
+    print(matchList)
     pass
 
 
