@@ -24,7 +24,7 @@ def flip(button, i, j):
 
 
 # given a frame, it displays the setting grid in the frame
-def settingGridShow(frame):
+def setting_grid_show(frame):
     for i in range(0, WIDTH):
         for j in range(0, HEIGHT):
             button = tk.Button(frame, bg="white", width=5, height=2)
