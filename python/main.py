@@ -1,7 +1,6 @@
 import tkinter as tk
 from ShowRandPattern import *
 from SetPattern import *
-from Algoritmo import *
 
 
 # to be used in order to add the pattern_match as a callback to the button
@@ -14,8 +13,7 @@ def add_pattern_match_callback(control, label, patternMatr, mainMatr, fun):
 
 # still has to be implemented
 def pattern_match(label, patternMatr, mainMatr):
-    machList = algoritmo(label, patternMatr, mainMatr)
-    print(machList)
+    print(patternMatr)
     pass
 
 
