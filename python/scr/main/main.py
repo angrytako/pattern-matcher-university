@@ -30,14 +30,14 @@ if __name__ == "__main__":
     root.title('Python pattern matching')
 
     # background pic
-    backgroundImage = tkt.PhotoImage(file=r"python/scr/img/background.png")
+    backgroundImage = tkt.PhotoImage(file=r"../img/background.png")
     # backgroundImage = backgroundImage.subsample(2, 1)
     label = tkt.Label(root, image=backgroundImage)
     label.place(x=-40, y=0)
 
     # Frame: used to organized more elements together
     mainFrame = tkt.Frame(root, highlightbackground="grey", highlightthickness=1, width=200, height=200)
-    mainFrame.pack(padx=150, pady=120)
+    mainFrame.pack(padx=40, pady=40)
 
     # title lable
     titleLb = tkt.Label(mainFrame, bg="white", font=("Arial", 22), text="Inserisci un pattern da cercare!", width=60,
@@ -68,12 +68,12 @@ if __name__ == "__main__":
     numPatternLb.grid(row=2, column=3)
 
     # arrow left with image
-    picLeft = tkt.PhotoImage(file=r"python/scr/img/arrow_left.png")
+    picLeft = tkt.PhotoImage(file=r"../img/arrow_left.png")
     arrowLeftButton = tkt.Button(mainFrame, bg="white", text="Arrow left", image=picLeft, width=60, height=30)
     arrowLeftButton.grid(row=2, column=2)
 
     # arrow right with image
-    picRight = tkt.PhotoImage(file=r"python/scr/img/arrow_right.png")
+    picRight = tkt.PhotoImage(file=r"../img/arrow_right.png")
     arrowRightButton = tkt.Button(mainFrame, bg="white", text="Arrow right", image=picRight, width=60, height=30)
     arrowRightButton.grid(row=2, column=4)
 
